@@ -1,23 +1,74 @@
 <!DOCTYPE html>
-
-<html>
-  <head>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-
-  <body>
-    <body id="grid">
-      <div class="box box1">1</div>
-      <div class="box box2">2</div>
-      <div class="box box3">3</div>
-      <div class="box box4">4</div>
-      <div class="box box5">5</div>
-      <div class="box box6">6</div>
-      <div class="box box7">7</div>
-      <div class="box box8">8</div>
-      <div class="box box9">9</div>
-      <div class="box box10">10</div>
-    </body>
-    <script type="text/javascript" src="./script.js"></script>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Grid Layout Design</title>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 242.5px);
+      grid-template-rows: repeat(5, 124px);
+      grid-gap: 10px;
+      background: white;
+      padding: 10px;
+    }
+    .grid-item {
+      background-color: green;
+      color: white;
+      font-size: 24px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .item1 {
+      grid-column: span 4;
+    }
+    .item2 {
+      grid-row: span 4;
+    }
+    .item3 {
+      grid-column: span 1;
+    }
+    .item4 {
+      grid-column: span 2;
+    }
+    .item5 {
+      grid-column: span 2;
+    }
+    .item6 {
+      grid-column: span 1;
+    }
+    .item7 {
+      grid-column: span 1;
+    }
+    .item8 {
+      grid-column: span 1;
+    }
+    .item9 {
+      grid-column: span 1;
+    }
+    .item10 {
+      grid-column: span 3;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Grid Layout Design</h1>
+  <p>Create the following layout using grid layout:</p>
+  <div class="grid-container" id="grid">
+    <div class="grid-item item1">1</div>
+    <div class="grid-item item2">2</div>
+    <div class="grid-item item3">3</div>
+    <div class="grid-item item4">4</div>
+    <div class="grid-item item5">5</div>
+    <div class="grid-item item6">6</div>
+    <div class="grid-item item7">7</div>
+    <div class="grid-item item8">8</div>
+    <div class="grid-item item9">9</div>
+    <div class="grid-item item10">10</div>
+  </div>
+</body>
 </html>
+
